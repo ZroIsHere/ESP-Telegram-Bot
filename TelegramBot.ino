@@ -14,7 +14,7 @@ void handleCommand(String text, String chat_id) {
   if (text == "/start") {
     bot.sendMessage(chat_id, "Hiii", "");
   } else {
-    bot.sendMessage(chat_id, "Comando no reconocido", "");
+    bot.sendMessage(chat_id, "Not handled command: " + text, "");
   }
 }
 
